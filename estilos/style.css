@@ -85,7 +85,6 @@ fieldset legend {
 .input-pessoal input::placeholder {
     color: var(--cor02);
     font-size: 0.775em;
-    padding: 1em 0 1em 0;
     display: inline-block;
 }
 
@@ -93,4 +92,71 @@ fieldset legend {
     outline: none;
     border: none;
     background-color: var(--cor03);
+}
+
+input[type="file"]::file-selector-button {
+    background-color: var(--cor02);
+    border: none;
+    color: #3d4073;
+    font-size: 0.775em;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: var(--cor03);
+    color: var(--cor02);
+}
+
+/*dados pessoais*/
+
+.input-prof {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--cor01);
+}
+
+.quest {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+    margin-left: 20px;
+    width: 30%;
+}
+
+textarea#icoment {
+    margin-top: 10px;
+    overflow: auto;
+    border: 1px solid var(--cor03);
+}
+
+textarea#icoment:focus-within {
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+#button-container {
+    margin: -25px 30px 0px 30px;
+}
+
+.button {
+    background-color: var(--cor01);
+    color: white;
+    border: 1px solid var(--cor02);
+    padding: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--cor04);
+    color: var(--cor02);
 }

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #3d4073;
+    --cor02: #0b1426;
+    --cor03: #965f5c;
+    --cor04: #f29e6d;
+
+    --font01: 'Montserrat', sans-serif;
+    --font02: 'Josefin-Sans', serif;
+}
+
+@media screen and (min-width: 768px){
+    body {
+        background: var(--cor02) url(../imagens/background.jpg) no-repeat center bottom fixed;
+        background-size: cover;
+    }
+
+    #container {
+        max-width: 600px;
+        background-color:#0b1426ec;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+    }
+}
