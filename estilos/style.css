@@ -64,17 +64,19 @@ fieldset legend {
 
 .input-pessoal {
     margin-bottom: 10px;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .input-pessoal label {
-    text-align: center;
+    flex: 1 0 35%;
+    text-align: left;
     display: inline-block;
-    width: 35%;
     margin-right: 5px;
 }
 
 .input-pessoal input {
-    width: 55%;
+    flex: 1 0 55%;
     border: 1px solid var(--cor01);
     background-color: var(--cor02);
     padding: 0.15em;
@@ -165,6 +167,18 @@ select:focus-within {
     background-color: var(--cor01);
     border: 1px solid var(--cor03);
     outline: none;
+}
+
+#check-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.check-item {
+    box-sizing: border-box;
+    margin: 0 5px;
+    flex: 47%;
 }
 
 input[type="checkbox"] {
